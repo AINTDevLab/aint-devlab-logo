@@ -1,0 +1,27 @@
+[project]
+name = "aint-devlab-logo"
+version = "0.1.0"
+description = "Generador del logo de AINT DevLab"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Fran Vargas", email = "fvarrui@gobiernodecanarias.org" }
+]
+license = { file = "LICENSE" }
+keywords = ["logo", "generator", "python", "pillow"]
+dependencies = [
+    "pillow",       # Para manipulación de imágenes
+]
+
+[project.urls]
+Home = "https://github.com/aint-devlab/aint-devlab-logo"
+Documentation = "https://github.com/aint-devlab/aint-devlab-logo/blob/main/README.md"
+Source = "https://github.com/aint-devlab/aint-devlab-logo"
+Issues = "https://github.com/aint-devlab/aint-devlab-logo/issues"
+
+[project.scripts]
+generate-logo = "main:main"
+
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
